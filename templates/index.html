@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-3 mb-3">
+                <p>Enter your postcode to find information about your constituency and your MP.</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-12 text-center mt-3 mb-2">
+                    <h4>Enter your postcode:</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2 text-center mt-2 mb-5">
+                    <form action="" method="post">
+                        <input type="text" id="postcode" class="form-control" name="postcode"><br>
+                        <input type="submit" class="btn btn-lg bg-danger text-white pt-2 pl-5 pr-5 pb-2" value="Submit">
+                    </form> 
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="text-danger">{{error}}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
